@@ -4,7 +4,7 @@ $(document).ready(function() {
         var formData = $(this).serialize();
 
         $.ajax({
-            url: "add_member.php",
+            url: "AddMember.php",
             type: "POST",
             data: formData,
             success: function(response) {
