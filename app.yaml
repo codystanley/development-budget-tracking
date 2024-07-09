@@ -4,13 +4,13 @@ env_variables:
   INSTANCE_UNIX_SOCKET: /cloudsql/development-budget-tracking:us-east1:development-budget-tracking
   DB_USER: db-user
   DB_PASS: Password123!
-  DB_NAME: <YOUR_DB_NAME>
+  DB_NAME: development_budget_tracking
 
 handlers:
 # Serve a directory as a static resource.
 - url: /
-  static_files: public/index.php
-  upload: public/index.php
+  static_files: public/index.html
+  upload: public/index.html
 
 - url: /(.*)
   static_files: public/\1
