@@ -1,10 +1,11 @@
 <?php
 
 // Retrieve environment variables
-$instanceUnixSocket = getenv("INSTANCE_UNIX_SOCKET");
-$dbUser = getenv("DB_USER");
-$dbPass = getenv("DB_PASS");
-$dbName = getenv("DB_NAME");
+$dbConn = 'evelopment-budget-tracking:us-east1:development-budget-tracking';
+$dbName = 'development_budget_tracking';
+$dbUser = 'db-user';
+$dbPass = 'Password123!';
+
 
 try {
     // Construct DSN (Data Source Name) for Cloud SQL Unix socket

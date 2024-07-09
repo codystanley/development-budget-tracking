@@ -1,11 +1,5 @@
 runtime: php83
 
-env_variables:
-  INSTANCE_UNIX_SOCKET: /cloudsql/development-budget-tracking:us-east1:development-budget-tracking
-  DB_USER: db-user
-  DB_PASS: Password123!
-  DB_NAME: development_budget_tracking
-
 handlers:
 # Serve a directory as a static resource.
 - url: /
