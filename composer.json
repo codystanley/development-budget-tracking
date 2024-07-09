@@ -1,0 +1,19 @@
+{
+    "name": "codystanley/development-budget-tracking",
+    "type": "project",
+    "require": {
+        "ext-pdo_mysql": "*",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codystanley\\DevelopmentBudgetTracking\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "codystanley",
+            "email": "cody.stanley@triagelogic.com"
+        }
+    ]
+}

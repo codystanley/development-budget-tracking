@@ -1,0 +1,27 @@
+runtime: php83
+
+env_variables:
+  INSTANCE_UNIX_SOCKET: /cloudsql/development-budget-tracking:us-east1:development-budget-tracking
+  DB_USER: db-user
+  DB_PASS: Password123!
+  DB_NAME: <YOUR_DB_NAME>
+
+handlers:
+# Serve a directory as a static resource.
+- url: /
+  static_files: public/index.php
+  upload: public/index.php
+
+- url: /(.*)
+  static_files: public/\1
+  upload: public/(.*)
+
+
+# Serve images as static resources.
+- url: /(.+\.(gif|png|jpg))$
+  static_files: \1
+  upload: .+\.(gif|png|jpg)$
+
+# Serve your app through a front controller at index.php or public/index.php.
+#- url: .*
+#  script: auto
